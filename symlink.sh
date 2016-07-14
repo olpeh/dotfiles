@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # recursively symlink all files from paths in this array
-FILES=( .tmux.conf, .gitignore_global )
+FILES=( .tmux.conf .gitignore_global )
 
 # symlink these directories
 # DIRS=( )
