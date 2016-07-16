@@ -5,11 +5,11 @@ echo
 echo "are you sure you want to continue? (y/n)"
 read answer
 if [[ "$answer" != "y" ]]; then
-    echo "aborting."
-      exit
-    fi
+	echo "aborting."
+	exit
+fi
 
-    # janus vim
-    curl -L https://bit.ly/janus-bootstrap | bash//bit.ly/janus-bootstrap | bash "$(dirname $0)"
+# janus vim
+curl -L "https://bit.ly/janus-bootstrap" | bash
 
-    ./update.sh
+./update.sh
