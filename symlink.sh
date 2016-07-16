@@ -1,7 +1,7 @@
-#!/bin/zsh
+#!/bin/bash
 
 # recursively symlink all files from paths in this array
-FILES=( .tmux.conf .gitignore_global .vimrc .vimrc.after )
+FILES=( .tmux.conf .gitignore_global .vimrc .vimrc.before .vimrc.after )
 
 # symlink these directories
 DIRS=( .vim )
