@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # recursively symlink all files from paths in this array
-FILES=( .tmux.conf .gitignore_global .vimrc .vimrc.before .vimrc.after )
+FILES=( .tmux.conf .tmux-osx.conf .gitignore_global .vimrc .vimrc.before .vimrc.after )
 
 # symlink these directories
 DIRS=( .vim )
@@ -23,7 +23,7 @@ if [[ $1 != '-y' ]]; then
 	echo ------
 	find "${FILES[@]}" -printf "$HOME/%p\n"
 
-	echo
+  echo
 	echo dirs:
 	echo -----
 	for DIR in $DIRS; do echo $HOME/$DIR; done
