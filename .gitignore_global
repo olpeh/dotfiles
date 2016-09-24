@@ -7,3 +7,4 @@ build.gradle
 gradle/wrapper/gradle-wrapper.properties
 concrete
 concrete/*/*
+*.css.map

@@ -17,7 +17,7 @@ function die()
 }
 
 # Add .old to any existing Vim file in the directory
-for filepath in ".vim" ".vimrc" ".gvimrc"; do
+for filepath in ".vim" ".vimrc" ".gvimrc" ".tmux-resurrect"; do
   if [ -e $filepath ]; then
     mv "${filepath}" "${filepath}.old" || die "Could not move ${filepath} to ${filepath}.old"
     echo "${filepath} has been renamed to ${filepath}.old"
@@ -26,5 +26,6 @@ done
 
 # Clone Janus into .vim
 git clone --recursive https://github.com/carlhuda/janus.git ".vim"
+git clone https://github.com/tmux-plugins/tmux-resurrect ".tmux-resurrect"
 
 ./update.sh

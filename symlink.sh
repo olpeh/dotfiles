@@ -4,7 +4,7 @@
 FILES=( .tmux.conf .tmux-osx.conf .gitignore_global .vimrc .vimrc.before .vimrc.after )
 
 # symlink these directories
-DIRS=( .vim )
+DIRS=( .tmux-resurrect .vim )
 
 # cd to root of git repo
 cd "$(dirname $0)"
@@ -23,7 +23,6 @@ if [[ $1 != '-y' ]]; then
 	echo ------
 	find "${FILES[@]}" -printf "$HOME/%p\n"
 
-  echo
 	echo dirs:
 	echo -----
 	for DIR in $DIRS; do echo $HOME/$DIR; done
