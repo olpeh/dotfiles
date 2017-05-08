@@ -28,4 +28,7 @@ done
 git clone --recursive https://github.com/carlhuda/janus.git ".vim"
 git clone https://github.com/tmux-plugins/tmux-resurrect ".tmux-resurrect"
 
+# Install oh-my-szh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 ./update.sh
