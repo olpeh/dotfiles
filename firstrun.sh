@@ -31,4 +31,9 @@ git clone https://github.com/tmux-plugins/tmux-resurrect ".tmux-resurrect"
 # Install oh-my-szh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+
+# Install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install -y
+
 ./update.sh
