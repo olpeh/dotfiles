@@ -8,3 +8,6 @@ gradle/wrapper/gradle-wrapper.properties
 concrete
 concrete/*/*
 *.css.map
+.vscode/*
+.vscode
+shrinkwrap.yaml
