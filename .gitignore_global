@@ -11,3 +11,4 @@ concrete/*/*
 .vscode/*
 .vscode
 shrinkwrap.yaml
+.envrc
