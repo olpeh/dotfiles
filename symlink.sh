@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # recursively symlink all files from paths in this array
-FILES=( .tmux.conf .tmux-osx.conf .gitignore_global )
+FILES=( .tmux.conf .gitignore_global )
 
 # symlink these directories
 DIRS=( .tmux-resurrect )
