@@ -8,9 +8,5 @@ echo "Updating $HOME/dotfiles"
 git pull
 echo
 
-cd ".vim"
-echo "Running rake for janus"
-rake
-
 cd $CWD
 ./symlink.sh -y
