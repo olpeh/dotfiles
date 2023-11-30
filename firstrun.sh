@@ -17,23 +17,14 @@ function die()
 }
 
 # Add .old to any existing Vim file in the directory
-for filepath in ".vim" ".vimrc" ".gvimrc" ".tmux-resurrect"; do
+for filepath in ".tmux-resurrect"; do
   if [ -e $filepath ]; then
     mv "${filepath}" "${filepath}.old" || die "Could not move ${filepath} to ${filepath}.old"
     echo "${filepath} has been renamed to ${filepath}.old"
   fi
 done
 
-# Clone Janus into .vim
-git clone --recursive https://github.com/carlhuda/janus.git ".vim"
-git clone https://github.com/tmux-plugins/tmux-resurrect ".tmux-resurrect"
-
 # Install oh-my-szh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-
-# Install fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install -y
 
 ./update.sh

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # recursively symlink all files from paths in this array
-FILES=( .tmux.conf .tmux-osx.conf .gitignore_global .vimrc .vimrc.before .vimrc.after )
+FILES=( .tmux.conf .tmux-osx.conf .gitignore_global )
 
 # symlink these directories
-DIRS=( .tmux-resurrect .vim )
+DIRS=( .tmux-resurrect )
 
 # cd to root of git repo
 cd "$(dirname $0)"
